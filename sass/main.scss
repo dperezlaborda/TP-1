@@ -1,0 +1,59 @@
+body{
+    background:white;
+    color: #444;
+    margin: 0;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+h2, h3, h4, a{
+    font-family: 'Montserrat', sans-serif;
+}
+#intro{
+    width: 100%;
+    background: #1445b3;
+    background-size: cover;
+    position: relative;
+    .intro-container{
+        .intro-img{
+            width: 80%;
+            padding-top: 35px;
+            padding-left: 42px;
+            img{
+                width: 100%;
+            }
+        }
+    .intro-text{
+        margin: 0px 0px 30px;
+        width: 100%;
+        color:white;
+        font-size: 24px;
+        text-align: center;
+        font-weight: 700;
+            span{
+            padding-right: 13px;
+            color:rgb(117, 117, 228);
+            text-decoration: underline;
+            }
+        .botones-container{
+        display: flex;
+                
+            .boton{
+            letter-spacing: 1px;
+            font-size: 14px;
+            padding: 10px 32px;
+            text-decoration: none;
+            color:white;
+            border-radius: 50px;   
+            }
+            .get-started{
+            border:2px solid #007bff;
+            background-color: #007bff;
+            }
+            .our-services{
+            border:2px solid white;
+            }
+        }
+    }
+    }
+}
