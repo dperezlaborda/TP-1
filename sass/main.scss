@@ -1,19 +1,104 @@
+//VARIABLES
+
+$blanco:#FFFFFF;
+$azul:#1445b3;
+$azul-oscuro:#00458F;
+$azul-claro:#004a99;
+$celeste:#ECF5FF;
+$celeste-menu:rgba(19, 39, 57, 0.9  );
+$celeste-letra:#74B5FC;
+$botones:#007bff;
+$font-family:'Open Sans', sans-serif;
+$font-h:'Montserrat', sans-serif;
+
 body{
-    background:white;
-    color: #444;
+    color:black;
     margin: 0;
 }
 p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-family;
 }
-h2, h3, h4, a{
-    font-family: 'Montserrat', sans-serif;
+h2, h3, h4, h5, a, span{
+    font-family: $font-h;
 }
+#header{
+    .header-container{
+        margin:5px;
+        .checkbox:checked ~ .menu-hide{
+            left: 0%;
+        }    
+        .checkbox{
+            display:none;
+        }
+        .flex-box-left{
+            display:flex;
+            justify-content: flex-end;
+            .boton-hamburguer{
+                height:40px;
+                width:40px;
+                background: $blanco;
+                margin-top: 5px;
+                border: 0;
+                position: relative;
+                span{
+                    height: 3.5px;
+                    width: 20px;
+                    display: block;
+                    margin-top:4.5px;
+                    background: $azul-oscuro;
+                    color: $azul-oscuro;
+                    transform-origin: 0px 100%;                
+                }
+            }
+        }                 
+    }
+}
+
+
+.menu-hide{
+    /*display: none;*/
+    width:73%;
+    height:100%;
+    transition: left 0.2s;
+    position:absolute;
+    left: -73%;
+    top:0%;
+    background: $celeste-menu;
+    overflow-y: auto;
+    z-index: 9999;
+    padding-top: 20px;
+    padding-bottom:100%;    
+    ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        a{
+            display: block;
+            text-decoration: none;
+            padding: 10px 20px;
+            text-align: left;
+			color: $blanco;
+            &:hover {
+				color: $celeste-letra;
+            }
+        }   .celeste-letra{
+            color:$celeste-letra;
+            }
+    
+    }
+}
+
+
+
 #intro{
+    background-color: $blanco;
     width: 100%;
-    background: #1445b3;
+    background:$azul;
     background-size: cover;
     position: relative;
+    display: flex;
     .intro-container{
         .intro-img{
             width: 80%;

@@ -10,9 +10,77 @@
     </head>
     <body>
         <header id="header" class="fixed-top">
-            <button></button>
-            <div class="header-container"></div>
+            <div class="header-container">
+                <div class="logo-ada"></div>
+                <input type="checkbox" class="checkbox" id="check">
+                <label class="menu-left" for="check">
+                    <div class="flex-box-left">
+                        <div class="boton-hamburguer">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </label>
+                <nav class="menu-hide"> <!--si no funciona cambiar x DIV-->
+                    <ul>
+                        <li>
+                            <a class="celeste-letra" href="#intro">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#team">Team</a>
+                        </li>
+                        <li class="menu-desplegable">
+                            <a class="celeste-letra" href>Clients</a>
+                            <ul>
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="submenu-desplegable">
+                                    <a href="#">2</a>
+                                    <ul>
+                                        <li>
+                                        <a href="#">2.1</a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="#">2.2</a>
+                                        </li>
+                                        <li>
+                                        <a href="#">2.3</a>
+                                        </li>
+                                        <li>
+                                        <a href="#">2.4</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#contacts"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
+
+        <!--=================INTRO=========================-->
+
         <section id="intro">
             <div class="intro-container">
                 <div class="intro-img">
@@ -25,8 +93,11 @@
                         <a href="#" class="our-services boton">Our Services</a>
                     </div>
                 </div>
-            </div>  
+            </div>              
         </section>
+
+        <!--=================ABOUT=========================-->
+
         <section id="about">
             <div class="about-container">
                 <header>
@@ -116,49 +187,53 @@
                     </div>
                 </div>
             </div>
-
-
+        </section>        
+        <!--=================SERVICES=========================-->
+                    
         <section id="services">
             <header>
-                <h1>Services</h1>
+                <h3>Services</h3>
                 <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
             </header>
             <div>
                 <div>   
-                    <h2>Lorem Ipsum</h2>
+                    <h4>Lorem Ipsum</h4>
                     <p>deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident 
                     </p>     
                 </div>
                 <div>   
-                    <h2>Sed ut perspiciatis</h2> 
+                    <h4>Sed ut perspiciatis</h4> 
                     <p>aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
                     </p>    
                 </div> 
                 <div>   
-                    <h2>Nemo Enim </h2>
+                    <h4>Nemo Enim </h4>
                     <p> vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque 
                     </p>
                 </div>
                 <div>
-                    <h2>Dolor Sitema</h2>
+                    <h4>Dolor Sitema</h4>
                     <p>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata
                     </p>    
                 </div>        
                 <div>
-                    <h2>Magni dolores</h2>
+                    <h4>Magni dolores</h4>
                     <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata    
                     </p>
                 </div>
                 <div>
-                    <h2>Eiusmod Tempor</h2>        
+                    <h4>Eiusmod Tempor</h4>        
                     <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi    
                     </p>
                 </div>
             </div>
         </section>
+
+    <!--=================WHY-US=========================-->
+
         <section id="why-us">
             <header>
-                <h2>Why Choose Us?</h2>
+                <h3>Why Choose Us?</h3>
                 <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
             </header>
             <div class="container-row">
@@ -212,7 +287,266 @@
                 </div>
             </div>
         </section>
+
+   <!--=================PORTFOLIO=========================--> 
+
+   <section id="portfolio">      
+        <div class="container-portfolio"> 
+            <h3>Our Portfolio</h3>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#">ALL</a></li>
+                        <li><a href="#">APP</a></li>
+                        <li><a href="#">CARD</a></li>
+                        <li><a href="#">WEB</a></li>
+                        </li>
+                    </ul>    
+            </header>
+            <div>      
+                <img src="img/portfolio/app1.jpg"  alt="imagen">
+                <img src="img/portfolio/app2.jpg"  alt="imagen">      
+                <img src="img/portfolio/app3.jpg"  alt="imagen">  
+                <img src="img/portfolio/card1.jpg"  alt="imagen">  
+                <img src="img/portfolio/card2.jpg"  alt="imagen">  
+                <img src="img/portfolio/card3.jpg"  alt="imagen">
+                <img src="img/portfolio/web1.jpg"  alt="imagen">  
+                <img src="img/portfolio/web2.jpg"  alt="imagen">  
+                <img src="img/portfolio/web3.jpg"  alt="imagen">   
+            </div>     
+        </div>
     </section>
-    <footer></footer>
+
+    <!--=================TESTIMONIALS=========================--> 
+
+    <section id="testimonials">
+        <header>
+            <h3>Testimonials</h3>
+        </header>
+        <div class="testimonials-container">
+            <div>
+                <div>
+                    <img src="img/testimonial-1.jpg" alt="img">      
+                    <h2>Goodman</h2>
+                    <h3>Ceo & Founder</h3>
+                    <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/testimonial-2.jpg" alt="img">      
+                    <h2>Sara Wilsson</h2>
+                    <h3>Designer</h3>
+                    <p>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    </p>
+    
+                </div>
+                <div>
+                    <img src="img/testimonial-3.jpg" alt="img"> 
+                    <h2>Jena Karlis</h2>
+                    <h3>Store Owner</h3>
+                    <p>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/testimonial-4.jpg" alt="img">
+                    <h2>Matt Brandon</h2>
+                    <h3>Freelancer</h3>
+                    <p>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/testimonial-5.jpg" alt="img"> 
+                    <h2>John Larson</h2>
+                    <h3>Entrepreneur</h3>
+                    <p>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                    </p>
+                </div> 
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </section>
+
+    <!--=================TEAM=========================--> 
+
+    <section id="team">
+        <header class="section-team">
+            <h3>Team</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </header>
+        <div class="container-team">
+            <div class="img-team1">   
+                <img src="img/team-01.jpg" alt="img">
+                <div class="info">
+                    <h4>Ben Affleck</h4>
+                    <span>Chief Executive Officer</span>
+                </div>  
+                <div class="social">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="img-team2">  
+                <img src="img/team-02.jpg" alt="img">
+                <div class="info">
+                    <h4>Christian Bale</h4>
+                    <span>Product Manager</span>
+                </div>        
+                <div class="social">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="img-team3">   
+                <img src="img/team-03.jpg" alt="img">                     
+                <div class="info">
+                    <h4>Michael Keaton</h4>
+                    <span>CTO</span>
+                </div>                    
+                <div class="social">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>        
+            <div class="img-team4">    
+                <img src="img/team-04.jpg" alt="img">                                   
+                <div class="info">
+                    <h4>Adam West</h4>
+                    <span>Accountant</span>
+                </div>                                         
+                <div class="social">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+     <!--=================CLIENTS=========================--> 
+
+    <section id="clients">
+        <header class="section-clients">
+            <h3>Our CLients</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.   
+            </p>
+        </header>
+        <div class="container-clients">
+            <div class="logo1">   
+                <img src="img/clients/client-1.png" alt="imagen">             
+            </div>   
+            <div class="logo2">     
+                <img src="img/clients/client-2.png" alt="imagen">                 
+            </div>
+            <div class="logo3">
+                <img src="img/clients/client-3.png" alt="imagen">                      
+            </div>
+            <div class="logo4">
+                <img src="img/clients/client-4.png" alt="imagen">         
+            </div>
+            <div class="logo5">    
+                <img src="img/clients/client-5.png" alt="imagen">          
+            </div>
+            <div class="logo6">
+                <img src="img/clients/client-6.png" alt="imagen">           
+            </div>
+            <div class="logo7">    
+                <img src="img/clients/client-7.png" alt="imagen">                
+            </div>
+            <div class="logo8"> 
+                <img src="img/clients/client-8.png" alt="imagen">                  
+            </div>
+        </div>    
+    </section>
+
+  <!--================CONTACT=========================-->  
+
+    <section id="contact">
+        <header class="section-contact">
+            <h3>Contact Us</h3> 
+        </header>
+        <div class="container-contact">
+           <div>
+                <div class="ubicacion">
+                    <i class="ion-ios-location-outline"><p></p></i>
+                </div>
+                <div class="mensaje">   
+                    <i class="ion-ios-location-outline"><p></p></i>    
+                </div>
+                <div class="">
+                    <i class="ion-ios-location-outline"><p></p></i>
+                </div>
+                <form action="" method="post" class="contactform">  
+                    <input type="text" name="Your name" placeholder="Your Name" />
+                    <input type="email" name="" placeholder="Your email" />
+                    <input type="text" name="Subject" placeholder="Subject" />
+                    <textarea name="Message" placeholder="Message"></textarea>
+                    <div class="col-boton">
+                        <button type="submit" title="Send Message">Send Message</button>
+                    </div>
+                 </form>
+
+            </div>
+    </section>
+
+      <!--================FOOTER=========================-->  
+               
+    <footer id="footer">          
+            <div class="container-footer">           
+                <div class="container-wayne">       
+                    <div class="col-1">      
+                        <h3>Wayne</h3>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.   
+                        </p>       
+                    </div>    
+                    <div class="col-2">       
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>    
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Privacy policy</a></li>     
+                        </ul>
+                    </div>  
+                    <div class="col-3">
+                        <h3>Contact Us</h3>
+                        <p>A108 Adam Street New York, NY 535022 United States    
+                        <strong>Phone:</strong>  +1 5589 55488 55
+                        <strong>Email:</strong>  info@example.com   
+                        </p>     
+                        <div class="social-links">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>    
+                    </div>
+                    <div class="col-4">    
+                        <h3>Our Newsletter</h3>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.
+                        </p>
+                        <form action="" method="POST">           
+                            <input type="email" name="email">
+                            <input type="submit" value="Subscribe">  
+                        </form>         
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© Copyright <strong>Wayne Enterprises</strong>. All Rights Reserved</p>      
+                    <p>Designed by</p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
