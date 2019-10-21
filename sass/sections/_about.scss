@@ -1,0 +1,141 @@
+@import "../common/mixins";
+
+#about{
+    background: $blanco;
+    padding: 60px 0;
+    .container{
+        .about-container{
+            @include tableta{
+                width: 100%;
+            }
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            .first-img{    /*------Primera imagen con texto, circulos con iconos----*/
+                height: auto;
+                margin:20px 0;
+                padding-left: 5px;
+                padding-right: 5px;
+
+                img{
+                    max-width: 100%;
+                    vertical-align: middle;
+                }
+            }
+            .first-container-text{
+                position: relative;
+                width: 100%;
+                padding-left: 15px;    /*se agrega porq me pisa el container*/
+                padding-right: 15px;
+                margin-right: auto;
+                margin-left: auto;
+                p{
+                    padding:0;
+                    margin: 0 0 30px 0;
+                }
+                .box{
+                    background-size: cover;
+                    padding: 0 0 30px 0;
+                    &:hover .icono{
+                        background-color: $botones;
+                        .fa{    
+                            color:$blanco;
+                        }
+                    }
+                    .icono{
+                        float: left;
+                        width: 64px;
+                        height: 64px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        text-align: center;
+                        border-radius: 50%;
+                        border: 2px solid $botones;
+                        transition: all 0.3s ease-in-out;
+                        .fa{
+                            display: inline-block;
+                            font-size: 25px;
+                            color: $botones;
+                            
+                        }
+                    }
+                    .title{
+                        margin-left: 80px;
+                        font-weight: 600;
+                        margin-bottom: 5px;
+                        font-size: 18px;
+                        margin-top: 0;
+                        cursor:pointer;
+                    }
+                    .text{
+                        margin-left: 80px;
+                        line-height: 24px;
+                        font-size: 14px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .second-container-about{     /*----Segunda imagen con 2 parrafos----*/
+            padding-top:60px;
+            .second-img{
+                position: relative;
+                width: 100%;
+                padding-right: 5px;
+                padding-left: 5px;
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+            .second-container-text{
+                padding-top: 2rem;
+                position: relative;
+                width: 100%;
+                h4{
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin: 0 0 20px 0;
+                    color:$gris-oscuro;
+                }
+                p{
+                    font-size: 16px;
+                    color:$gris-oscuro;
+                    margin: 0 0 30px 0;
+
+                }
+            }
+        }
+        .third-container-about{    /*----Tercer imagen con parrafo----*/
+            padding-top: 60px;
+            .third-img{
+                position: relative;
+                width: 100%;
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+            .third-container-text{
+                padding-top: 2rem;
+                position: relative;
+                width: 100%;
+                h4{
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin: 0 0 20px 0;
+                    color: $gris-oscuro;
+                }
+                p{
+                    font-size: 16px;
+                    color:$gris-oscuro;
+                    margin: 0 0 30px 0;
+                }
+
+            }
+        }
+    }
+}

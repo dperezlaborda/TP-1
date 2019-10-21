@@ -187,17 +187,19 @@
 
         <section id="intro">
             <div class="container">
-                <div class="intro-img">
-                    <img src="img/intro-img.svg">
-                </div>
-                <div class="intro-text">
-                    <h2>We provide<br><span>solutions</span></br>for your business!</h2>
-                    <div class="botones-container">
-                        <a href="#" class="get-started boton">Get Started</a>
-                        <a href="#" class="our-services boton">Our Services</a>
+                <div class="texto-imagen">
+                    <div class="intro-img">
+                        <img src="img/intro-img.svg">
+                    </div>
+                    <div class="intro-text">
+                        <h2>We provide<br><span>solutions</span></br>for your business!</h2>
+                        <div class="botones-container">
+                            <a href="#" class="get-started boton">Get Started</a>
+                            <a href="#" class="our-services boton">Our Services</a>
+                        </div>
                     </div>
                 </div>
-            </div>              
+            </div>             
         </section>
 
         <!--=================ABOUT=========================-->
@@ -210,41 +212,42 @@
                     venenatis. Consectetur adipiscing elit.</p>
                 </header>
                 <div class="row about-container">
-                    <div class="first-img">
-                        <img src="img/about-img.svg" width="100%">
+                    <div class="container-flex">
+                        <div class="first-img">
+                            <img src="img/about-img.svg" width="100%">
+                        </div>
+                        <div class="first-container-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus sem sed dui 
+                            ultricies venenatis. Nam rhoncus, orci posuere porta varius.</p>
+                                <div class="box shopping">
+                                    <div class="icono shopping">
+                                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                    </div>
+                                    <h3 class="title">Suspendisse faucibus</h3>
+                                    <p class="text">Donec pellentesque massa et tellus sodales sodales. In quis dui in dui tincidunt lacinia 
+                                    sollicitudin vel justo.
+                                    </p>
+                                </div>
+                                <div class="box picture">
+                                    <div class="icono picture">
+                                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h3 class="title">Morbi semper</h3>
+                                    <p class="text">Fusce vulputate, libero a laoreet ornare, lacus sem vestibulum libero, at pulvinar
+                                    velit augue non felis.
+                                    </p>
+                                </div>
+                                <div class="box chart">
+                                    <div class="icono chart">
+                                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                    </div>
+                                    <h3 class="title">Maecenas sagittis</h3>
+                                    <p class="text">In consectetur ac leo sed dictum. Aenean vitae elit sed mauris ullamcorper tristique 
+                                    non nec eros.
+                                    </p>
+                                </div>
+                        </div>
                     </div>
-                    <div class="first-container-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus sem sed dui 
-                           ultricies venenatis. Nam rhoncus, orci posuere porta varius.</p>
-                        <div class="box shopping">
-                            <div class="icono shopping">
-                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                            </div>
-                            <h3 class="title">Suspendisse faucibus</h3>
-                            <p class="text">Donec pellentesque massa et tellus sodales sodales. In quis dui in dui tincidunt lacinia 
-                            sollicitudin vel justo.
-                            </p>
-                        </div>
-                        <div class="box picture">
-                            <div class="icono picture">
-                                <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            </div>
-                            <h3 class="title">Morbi semper</h3>
-                            <p class="text">Fusce vulputate, libero a laoreet ornare, lacus sem vestibulum libero, at pulvinar
-                             velit augue non felis.
-                            </p>
-                        </div>
-                        <div class="box chart">
-                            <div class="icono chart">
-                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                            </div>
-                            <h3 class="title">Maecenas sagittis</h3>
-                            <p class="text">In consectetur ac leo sed dictum. Aenean vitae elit sed mauris ullamcorper tristique 
-                            non nec eros.
-                            </p>
-                        </div>
-                    </div>
-                </div>
                 <div class="second-container-about">
                     <div class="second-img">
                         <img src="img/about-extra-1.svg" width="100%">
@@ -422,113 +425,110 @@
         </section>
 
    <!--=================PORTFOLIO=========================--> 
-
-   <section id="portfolio">      
-        <div class="container">
-            <h3>Our Portfolio</h3>
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="#">ALL</a></li>
-                        <li><a href="#">APP</a></li>
-                        <li><a href="#">CARD</a></li>
-                        <li><a href="#">WEB</a></li>
-                        </li>
-                    </ul>    
+   
+    <section id="portfolio">  
+        <div class="container">    
+            <div class="container-portfolio"> <!---*cambiar por clase container-->
+            <header class="header-portf">
+                <h3>Our Portfolio</h3>
             </header>
-            <div>      
-                <img src="img/portfolio/app1.jpg"  alt="imagen">
-                <img src="img/portfolio/app2.jpg"  alt="imagen">      
-                <img src="img/portfolio/app3.jpg"  alt="imagen">  
-                <img src="img/portfolio/card1.jpg"  alt="imagen">  
-                <img src="img/portfolio/card2.jpg"  alt="imagen">  
-                <img src="img/portfolio/card3.jpg"  alt="imagen">
-                <img src="img/portfolio/web1.jpg"  alt="imagen">  
-                <img src="img/portfolio/web2.jpg"  alt="imagen">  
-                <img src="img/portfolio/web3.jpg"  alt="imagen">   
-            </div>     
-        </div>
-    </section>
+            <div class="botonesmenu">
+                <div class="botonmenu">ALL</div>
+                <div class="botonmenu">APP</div>
+                <div class="botonmenu">CARD</div>
+                <div class="botonmenu">WEB</div>                     
+            </div>
+            <div class="container-img">
+                <div class="info-port">      
+                    <img src="img/portfolio/app1.jpg"  alt="imagen" class="img-fluid" >
+                    <img src="img/portfolio/web3.jpg"  alt="imagen" class="img-fluid" >      
+                    <img src="img/portfolio/app2.jpg"  alt="imagen" class="img-fluid">  
+                    <img src="img/portfolio/card2.jpg"  alt="imagen" class="img-fluid">  
+                    <img src="img/portfolio/web2.jpg"  alt="imagen" class="img-fluid">  
+                    <img src="img/portfolio/app3.jpg"  alt="imagen" class="img-fluid">
+                    <img src="img/portfolio/card1.jpg"  alt="imagen" class="img-fluid">  
+                    <img src="img/portfolio/card3.jpg"  alt="imagen" class="img-fluid">  
+                    <img src="img/portfolio/web1.jpg"  alt="imagen" class="img-fluid" >   
+                </div>
+            </div>
+        </div>        
+</section>
+
 
     <!--=================TESTIMONIALS=========================--> 
 
     <section id="testimonials">
-        <header>
-            <h3>Testimonials</h3>
-        </header>
+        <div class="testimonials-wrapper">
         <div class="container">
-            <div>
-                <div>
-                    <img src="img/testimonial-1.jpg" alt="img">      
-                    <h2>Goodman</h2>
-                    <h3>Ceo & Founder</h3>
-                    <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    </p>
-                </div>
-                <div>
-                    <img src="img/testimonial-2.jpg" alt="img">      
-                    <h2>Sara Wilsson</h2>
-                    <h3>Designer</h3>
-                    <p>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    </p>
-    
-                </div>
-                <div>
-                    <img src="img/testimonial-3.jpg" alt="img"> 
-                    <h2>Jena Karlis</h2>
-                    <h3>Store Owner</h3>
-                    <p>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    </p>
-                </div>
-                <div>
-                    <img src="img/testimonial-4.jpg" alt="img">
-                    <h2>Matt Brandon</h2>
-                    <h3>Freelancer</h3>
-                    <p>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    </p>
-                </div>
-                <div>
-                    <img src="img/testimonial-5.jpg" alt="img"> 
-                    <h2>John Larson</h2>
-                    <h3>Entrepreneur</h3>
-                    <p>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                    </p>
-                </div> 
-            </div>
-            <div>
-            </div>
-            <div>
+            <header class="header-test">
+                <h3>Testimonials</h3>
+            </header>
+            <div class="container">
+                <div class="testimonials-item">
+                    
+                    <img src="img/testimonial-1.jpg" alt="img" class="testimonials-img">               
+                    <div class="text-item">
+                        <h2>Saul Goodman</h2>
+                        <h4>Ceo & Founder</h3>
+                        <p>
+                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit 
+                        rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, 
+                        risus at semper.
+                        </p>
+                    </div>
+                </div>            
             </div>
         </div>
+    </div>
     </section>
 
     <!--=================TEAM=========================--> 
 
     <section id="team">
         <div class="container">
-            <header class="header-all">
+            <header class="header-team">
                 <h3>Team</h3>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-            </header>      
-            <div class="img-team1">   
-                <img src="img/team-01.jpg" alt="img">
-                <div class="info">
-                    <h4>Ben Affleck</h4>
-                    <span>Chief Executive Officer</span>
-                </div>  
+            </header>
+            <div class="teams">
+                <div class="team1">
+                    <img src="img/team-01.jpg" alt="img" class="batman">
+                </div>          
+                <!--<h4>Ben Affleck</h4>
+                <span>Chief Executive Officer</span>-->         
                 <div class="social">
                     <a href="#"><i class="fa fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-google-plus"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>  
                 </div>
-            </div>
-            <div class="img-team2">  
-                <img src="img/team-02.jpg" alt="img">
-                <div class="info">
-                    <h4>Christian Bale</h4>
-                    <span>Product Manager</span>
+                <div class="team1">
+                    <img src="img/team-02.jpg" alt="img" class="batman">
                 </div>        
+                <!--<h4>Christian Bale</h4>
+                <span>Product Manager</span>-->
+                <div class="social">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <div class="team1">
+                    <img src="img/team-03.jpg" alt="img" class="batman">
+                </div> 
+                <!--<h4>Michael Keaton</h4>
+                <span>CTO</span> -->
+                <div class="social">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>               
+            <div class="team1">
+                <img src="img/team-04.jpg" alt="img" class="batman">
+            </div>
+                    <!--<h4>Michael Keaton</h4>
+                    <span>CTO</span>-->
                 <div class="social">
                     <a href="#"><i class="fa fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -536,70 +536,47 @@
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
-            <div class="img-team3">   
-                <img src="img/team-03.jpg" alt="img">                     
-                <div class="info">
-                    <h4>Michael Keaton</h4>
-                    <span>CTO</span>
-                </div>                    
-                <div class="social">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                </div>
-            </div>        
-            <div class="img-team4">    
-                <img src="img/team-04.jpg" alt="img">                                   
-                <div class="info">
-                    <h4>Adam West</h4>
-                    <span>Accountant</span>
-                </div>                                         
-                <div class="social">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                </div>
-            </div> 
         </div>
     </section>
 
      <!--=================CLIENTS=========================--> 
 
-    <section id="clients">
+    <section id="clients" class="clients-bg">
         <div class="container">
-            <header class="header-all">
+            <header class="clients-header">
                 <h3>Our CLients</h3>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.   
                 </p>
-            </header>       
-            <div class="logo1">   
-                <img src="img/clients/client-1.png" alt="imagen">             
-            </div>   
-            <div class="logo2">     
-                <img src="img/clients/client-2.png" alt="imagen">                 
+            </header>
+            <div class="container-row">
+                    <div class="client-logo">   
+                        <img src="img/clients/client-1.png" alt="imagen" class="img-client">             
+                    </div>
+                    <div class="client-logo">
+                    <img src="img/clients/client-2.png" alt="imagen" class="img-client">                 
+                    </div>
+                    <div class="client-logo">
+                        <img src="img/clients/client-3.png" alt="imagen" class="img-client">                      
+                    </div>
+                    <div class="client-logo">
+                        <img src="img/clients/client-4.png" alt="imagen" class="img-client">         
+                    </div>
+                    <div class="client-logo">    
+                        <img src="img/clients/client-5.png" alt="imagen" class="img-client">          
+                    </div> 
+                    <div class="client-logo">
+                        <img src="img/clients/client-6.png" alt="imagen" class="img-client">           
+                    </div>
+                    <div class="client-logo">    
+                        <img src="img/clients/client-7.png" alt="imagen" class="img-client">                
+                    </div>
+                    <div class="client-logo"> 
+                        <img src="img/clients/client-8.png" alt="imagen" class="img-client">                  
+                    </div>
             </div>
-            <div class="logo3">
-                <img src="img/clients/client-3.png" alt="imagen">                      
-            </div>
-            <div class="logo4">
-                <img src="img/clients/client-4.png" alt="imagen">         
-            </div>
-            <div class="logo5">    
-                <img src="img/clients/client-5.png" alt="imagen">          
-            </div>
-            <div class="logo6">
-                <img src="img/clients/client-6.png" alt="imagen">           
-            </div>
-            <div class="logo7">    
-                <img src="img/clients/client-7.png" alt="imagen">                
-            </div>
-            <div class="logo8"> 
-                <img src="img/clients/client-8.png" alt="imagen">                  
-            </div>
-        </div>    
-    </section>
+        </div>
+    </div>
+</section>
 
   <!--================CONTACT=========================-->  
 

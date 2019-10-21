@@ -1,121 +1,22 @@
+@mixin tableta{
+    @media (min-width:768px){
+        @content;
+    }
+}
+
+@mixin laptop-a{
+    @media (min-width:1025px){
+        @content;
+    }
+}
+
+@mixin desktop-b{
+    @media (min-width:1281px){
+        @content;
+    }
+}
 
 
-@mixin phone{
-    #intro{
-        .intro-img{
-            img{
-                color:blue;
-            }
-        }
-    }
-    #header #menu-superior{
-        display:none;
-    }
-}
-@mixin phone2{
-    #intro{
-        .intro-img{
-            margin-top:20px;
-            max-width:80%;               
-        }
-        .botones-container{
-            display:block;
-            margin:0 auto 0 auto;
-            height:20%;
-        }
-    }
-    #header #menu-superior{
-        display:none;
-    }
-}
-@mixin tablet{
-    #intro{
-        .intro-img{
-            margin: auto;
-            img{
-            margin:80px 0px 0px 28px;
-            width:480px;
-            height:480px;
-            display:flex;
-            align-items: center;
-            }
-        }
-    }
-    #header #menu-superior{
-        display:none;
-    }
-}
-@mixin tablet2{
-    #intro{
-        .intro-img{
-                margin-top:20px;
-                max-width:80%;
-                img{
-                    margin:80px auto 0px auto;
-                    width:480px;
-                    height:480px;
-                    display:flex;
-                    align-items: center;
-                    }
-                
-        }
-    }
-    #header #menu-superior{
-        display:none;
-    }
-}
-@mixin desktop{
-    #intro{
-        .intro-img{
-                margin-top:20px;
-                max-width:80%;
-                img{
-                    float: right;
-                    width:480px;
-                    height:480px;
-                    }
-        }
-        .intro-text{
-            padding-top:80px;
-            font-size:50px;
-            h2{
-                float:left;
-                text-align:left;
-            }
-        }    
-    }
-    #header{
-        .boton-hamburguer{
-            display:none;
-        }
-    }
-}
-@mixin desktop-max{
-    #intro{
-        .intro-img{
-            margin-top:80px;
-            max-width:80%;
-            img{
-                float: right;
-                width:550px;
-                height:550px;
-            }
-        .intro-text{
-            padding-top:80px;
-            font-size:50px;
-            h2{
-                float:left;
-                text-align:left;
-            }
-        } 
-        }   
-    }
-    #header{
-        .boton-hamburguer{
-            display:none;
-        }
-    }
-}
 
 
 

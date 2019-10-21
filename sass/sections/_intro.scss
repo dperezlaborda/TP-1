@@ -1,0 +1,81 @@
+@import "../common/mixins";
+
+#intro{
+    background-color: $blanco;
+    width: 100%;
+    background:$azul;
+    background-size: cover;
+    .container{
+        height:100%;
+        padding-top: 60px;
+        padding-bottom: 50px;
+        .texto-imagen{
+          @include tableta {
+          }
+        } 
+        .intro-img{
+            float: none;
+            width: 80%;
+            margin:4rem auto 25px auto;/*top right bottom left*/
+            @include tableta{
+                right:5px
+            }
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    .intro-text{
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        h2{
+            font-weight: bolder;
+            color:$blanco;
+            font-weight:400;
+            font-size:34px;
+            span{
+            /*padding-right: 13px;*/
+            color:rgb(117, 117, 228);
+            text-decoration: underline;
+            }
+        }
+        .botones-container{
+            margin-top:35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                .boton{
+                letter-spacing: 1px;
+                font-size: 14px;
+                padding: 10px 32px;
+                text-decoration: none;
+                color:$blanco;
+                border-radius: 50px;  
+                margin: 0 0 1.2rem 0;
+                }
+            .get-started{
+            border:2px solid $botones;
+            background-color: $botones;
+            &:hover{
+                background-color: $azul;
+                border: 2px solid $blanco;
+                transition: all 0.3s ease-in-out;
+                }
+            }
+            .our-services{
+            border:2px solid $blanco;
+            margin-top:5px;
+            &:hover{
+                background-color: $botones;
+                border: 2px solid $botones;
+                transition: all 0.3s ease-in-out;
+            }
+            }
+        }
+        }
+    }
+}
+
+
+//El header de todas las sections a partir de ABOUT

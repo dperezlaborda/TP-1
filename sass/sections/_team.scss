@@ -1,0 +1,57 @@
+@import "../common/mixins";
+
+#team{
+    background: #fff;
+    padding: 60px 0;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    .header-team{
+        h3{
+        font-size: 36px;
+        color: #283d50;
+        text-align: center;
+        font-weight: 500;      
+        }
+        p{
+        text-align: center;
+        margin: auto;
+        font-size: 15px;
+        padding-bottom: 60px;
+        color: #556877; 
+        }
+    }        
+    .teams{
+        display: flex;
+        flex-direction: column;
+        @include tableta{
+            flex-flow: row wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+        @include laptop-a{
+            flex-direction: row;
+        }
+        .team1{
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            @include tableta{
+                width: 30%;
+            }
+            @include laptop-a{
+                width: 15%;
+            }
+        }        
+        .batman{
+            display: block;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            border-radius: 50%;
+            overflow: hidden;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+    }
+}
