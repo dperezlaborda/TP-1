@@ -12,28 +12,16 @@
 @import "sections/_contact";
 
 
-*{
-    box-sizing: border-box;
-}
-
 .checkbox:checked ~ .fondoapagado{
     box-sizing:border-box;
 }
 
-body{
-    color:black;
-    margin: 0;
-}
-
-p{
-    font-family: $font-family;
-}
-h2, h3, h4, h5, a, span{
-    font-family: $font-h;
-}
-
-
 //-------------------HEADER----------------//
+
+*{
+    list-style-type:none;
+    text-decoration: none;    /*no lo aplica*/
+}
 
 #header{
     z-index: 997;
@@ -190,6 +178,7 @@ h2, h3, h4, h5, a, span{
     }
 }
 
+
 #menu-superior{
     background-color: $blanco;
     height:45px;
@@ -271,15 +260,7 @@ h2, h3, h4, h5, a, span{
 }
 
 
-// CONTAINER DE TODAS LAS SECTIONS A PARTIR DE ABOUT
 
-.container{
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 /*MENU SUPERIOR*/
 #menu-superior{

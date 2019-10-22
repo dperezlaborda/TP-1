@@ -1,6 +1,9 @@
 @import "../common/mixins";
+@import "../common/variables";
+@import "../common/all";
 
 #why-us{
+    width:100%;
     padding: 60px 0;
     background-color: $azul-claro;
     .header-why{
@@ -18,6 +21,11 @@
             color:$blanco;
             padding-bottom: 60px;
             margin:0;
+            @include tableta{
+                width: 50%;
+                text-align: center;
+                margin:auto;
+            }
         }
     }
     .container-row-why{
@@ -36,6 +44,11 @@
             padding-right:15px;
             padding-left:15px;
             margin-bottom: 1rem;
+            @include tableta{
+                flex-direction:row;
+                display: flex;
+                flex-direction: row;
+            }
             .card{
                 margin: 0;
                 background: $azul-oscuro;
@@ -51,7 +64,7 @@
                 display: flex;
                 flex-direction: column;
                 @include tableta{
-                    width: 115%;
+                    width: 100%;
                 }
                 &:hover{
                     background-color: $color-header;
@@ -123,4 +136,5 @@
             }
         }
     }
+
 }

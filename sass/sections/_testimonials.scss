@@ -1,53 +1,57 @@
 @import "../common/mixins";
+@import "../common/variables";
+@import "../common/all";
 
-#testimonials{   
-    padding: 60px 0;
-    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+#testimonials {
     background: #ecf5ff;
-    text-align: center;   
-      .header-test{
-       color:$blanco;
-            h3{
-            font-size: 36px;
-            color: #283d50;
-            text-align: center;
-            font-weight: 500;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding-bottom: 60px;
+    padding-top: 60px;
+    .testimonial-wrapper {
+      display: flex;
+      flex-direction: column;
+      @include tableta {
+        flex-direction: row;
+        justify-content: center;
+      }
+  
+      .contenedor {
+        .wason {
+          width: 120px;
+          border-radius: 50%;
+          max-width: 100%;
+          border: 4px solid #ffffff;
+          display: block;
+          align-items: center;
+          margin: auto;
+          float: none;
         }
-        .testimonials-wrapper{
-            display: flex;
-            justify-content: center;
-            @include tableta{
-                flex-direction: row;
-                justify-content: center;
-            }
-        }
-   }    
-   .testimonials-item {
-    text-align: center;
-    float: none;
-    margin: auto;    
-        .testimonials-img {
-            width: 120px;
-            border-radius: 50%;
-            border: 4px solid #fff;
-
-        }
-        h2 {
-            font-size: 20px;
-            font-weight: bold;
-            margin: 10px 0 5px 0;
+      }
+      .testimonios {
+        display: flex;
+        flex-direction: column;
+        @include tableta {
+          width: 50%;
+          text-align: justify;
+          margin-left: 20px;
         }
         h4 {
-            font-size: 14px;
-            color: #999;
-            margin: 0 0 15px 0;
-            font-weight: 400;
-        }        
+          font-size: 20px;
+          font-weight: bold;
+          margin: 10px 0 5px 0;
+        }
+        h5 {
+          font-size: 14px;
+          color: #999;
+          margin: 0 0 15px 0;
+          font-weight: 400;
+        }
         p {
-            font-style: italic;
-            margin: 0 0 15px 140px;
-            margin-left: 0;
-            color: #444;        
-        }      
+          font-style: italic;
+          font-size: 16px;
+          margin: 0 15px 0 0;
+          color: #444; 
+        }
+      }
     }
-}
+  }

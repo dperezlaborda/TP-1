@@ -1,36 +1,42 @@
 @import "../common/mixins";
+@import "../common/all";
+@import "../common/variables";
+
 
 #intro{
-    background-color: $blanco;
-    width: 100%;
-    background:$azul;
-    background-size: cover;
-    .container{
-        height:100%;
-        padding-top: 60px;
-        padding-bottom: 50px;
-        .texto-imagen{
-          @include tableta {
-          }
-        } 
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  background: url("../img/intro-bg.png") center no-repeat;
+  background-size: cover;
+  background-color: #1445b3;
+   .texto-imagen{
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        @include laptop-a{
+            flex-direction: row-reverse;
+            padding: 60px 0;
+        }
         .intro-img{
-            float: none;
-            width: 80%;
-            margin:4rem auto 25px auto;/*top right bottom left*/
-            @include tableta{
-                right:5px
-            }
-            img{
-                max-width: 100%;
-                height: auto;
+            max-width: 118%;
+            height: auto;
+            margin-top: 101px;
+            @include laptop-a{
+                max-width: 50%;
             }
         }
     .intro-text{
-        margin: auto;
-        width: 100%;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+   }
         h2{
-            font-weight: bolder;
+            text-align: center;
+            padding: 0px 20px;
+            word-wrap: break-word;
             color:$blanco;
             font-weight:400;
             font-size:34px;
@@ -41,41 +47,42 @@
             }
         }
         .botones-container{
-            margin-top:35px;
-            display: flex;
             flex-direction: column;
-            align-items: center;
+            display: flex;
+            @include laptop-a{
+                flex-direction: row;
+            }
                 .boton{
-                letter-spacing: 1px;
+                box-sizing: border-box;
+                letter-spacing: 1px;    
+                display: inline-block;
                 font-size: 14px;
                 padding: 10px 32px;
                 text-decoration: none;
                 color:$blanco;
-                border-radius: 50px;  
-                margin: 0 0 1.2rem 0;
+                border-radius: 32px;  
+                margin: 0 20px 20px 0;
+    
+                transition: all 0.2s;
                 }
             .get-started{
             border:2px solid $botones;
             background-color: $botones;
             &:hover{
-                background-color: $azul;
-                border: 2px solid $blanco;
-                transition: all 0.3s ease-in-out;
+                background: none;
+                border-color: #fff;
+                color: #fff;
                 }
             }
             .our-services{
             border:2px solid $blanco;
-            margin-top:5px;
+            
             &:hover{
                 background-color: $botones;
                 border: 2px solid $botones;
-                transition: all 0.3s ease-in-out;
+               
             }
-            }
-        }
         }
     }
-}
-
-
-//El header de todas las sections a partir de ABOUT
+} 
+    

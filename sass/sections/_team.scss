@@ -1,57 +1,94 @@
 @import "../common/mixins";
+@import "../common/variables";
+@import "../common/all";
 
-#team{
-    background: #fff;
-    padding: 60px 0;
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-    .header-team{
-        h3{
-        font-size: 36px;
-        color: #283d50;
-        text-align: center;
-        font-weight: 500;      
-        }
-        p{
-        text-align: center;
-        margin: auto;
-        font-size: 15px;
-        padding-bottom: 60px;
-        color: #556877; 
-        }
-    }        
-    .teams{
-        display: flex;
-        flex-direction: column;
-        @include tableta{
-            flex-flow: row wrap;
-            flex-direction: row;
-            justify-content: center;
-        }
-        @include laptop-a{
-            flex-direction: row;
-        }
-        .team1{
-            margin: 20px;
-            display: flex;
-            justify-content: center;
-            @include tableta{
-                width: 30%;
-            }
-            @include laptop-a{
-                width: 15%;
-            }
-        }        
-        .batman{
-            display: block;
-            max-width: 100%;
-            width: auto;
-            height: auto;
-            border-radius: 50%;
-            overflow: hidden;
-            text-align: center;
-            margin-bottom: 20px;
-            position: relative;
-            overflow: hidden;
-        }
-    }
+#team {
+ padding-top: 60px;
+ padding-bottom: 60px;
+ padding: 60px 0;
+}
+.contenedort {
+ p {
+   font-family: $font-h;
+   color:  #556877;
+   text-align: center;
+   font-size: 15px;
+   line-height: 1.5;
+   padding-bottom: 60px;
+   margin-block-start: 0em;
+   margin-block-end: 0em;
+   color:  #556877;
+ }
+ .teams {
+   display: flex;
+   flex-direction: column;
+   @include tableta {
+     flex-flow: row wrap;
+     flex-direction: row;
+     justify-content: center;
+   }
+   @include laptop-a {
+     flex-direction: row;
+   }
+   .team1 {
+     margin: 20px;
+     display: flex;
+     justify-content: center;
+     position: relative;
+     @include tableta {
+       width: 40%;
+     }
+     @include laptop-a {
+       width: 20%;
+     }
+     .overlay {
+       top: 0;
+       left: 0;
+       right: 0;
+       width: 100%;
+       height: 100%;
+       opacity: 0;
+       transition: 0.5s ease;
+       background-color: rgba(0, 66, 137, 0.5);
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       z-index: 1;
+       position: absolute;
+       overflow: hidden;
+       border-radius: 50%;
+       h2 {
+         font-family: $font-h;
+         font-size: 22px;
+         color: #ffffff;
+         margin-bottom: 0;
+       }
+       span {
+         font-family: $font-h;
+         font-size: 13px;
+         color: #ffffff;
+         margin-bottom: 10px;
+         font-style: italic;
+       }
+     .iconoschiquitos{
+       color: #ffffff;
+      .iconaso{
+       font-size: 18px;
+       margin: 0 2px;
+      }
+     }
+     }
+     &:hover  .overlay {
+       opacity: 1;
+     }
+     .batman {
+       display: block;
+       max-width: 100%;
+       width: auto;
+       height: auto;
+       border-radius: 50%;
+     }
+   }
+ }
 }

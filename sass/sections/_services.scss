@@ -1,4 +1,6 @@
 @import "../common/mixins";
+@import "../common/variables";
+@import "../common/all";
 
 #services{
     padding: 60px 0 40px 0;
@@ -32,6 +34,9 @@
                         position: absolute;
                         left: -10px;
                         top: 72px;
+                        @include tableta{
+                            top:30px;
+                        }
                         i{
                             font-size: 64px;
                             line-height: 1;

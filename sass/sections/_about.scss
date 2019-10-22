@@ -1,141 +1,156 @@
 @import "../common/mixins";
+@import "../common/all";
+@import "../common/variables";
 
-#about{
-    background: $blanco;
-    padding: 60px 0;
-    .container{
-        .about-container{
-            @include tableta{
-                width: 100%;
-            }
-        }
-        .row{
-            display: flex;
-            flex-wrap: wrap;
-            .first-img{    /*------Primera imagen con texto, circulos con iconos----*/
-                height: auto;
-                margin:20px 0;
-                padding-left: 5px;
-                padding-right: 5px;
-
-                img{
-                    max-width: 100%;
-                    vertical-align: middle;
-                }
-            }
-            .first-container-text{
-                position: relative;
-                width: 100%;
-                padding-left: 15px;    /*se agrega porq me pisa el container*/
-                padding-right: 15px;
-                margin-right: auto;
-                margin-left: auto;
-                p{
-                    padding:0;
-                    margin: 0 0 30px 0;
-                }
-                .box{
-                    background-size: cover;
-                    padding: 0 0 30px 0;
-                    &:hover .icono{
-                        background-color: $botones;
-                        .fa{    
-                            color:$blanco;
-                        }
-                    }
-                    .icono{
-                        float: left;
-                        width: 64px;
-                        height: 64px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: column;
-                        text-align: center;
-                        border-radius: 50%;
-                        border: 2px solid $botones;
-                        transition: all 0.3s ease-in-out;
-                        .fa{
-                            display: inline-block;
-                            font-size: 25px;
-                            color: $botones;
-                            
-                        }
-                    }
-                    .title{
-                        margin-left: 80px;
-                        font-weight: 600;
-                        margin-bottom: 5px;
-                        font-size: 18px;
-                        margin-top: 0;
-                        cursor:pointer;
-                    }
-                    .text{
-                        margin-left: 80px;
-                        line-height: 24px;
-                        font-size: 14px;
-                        margin-bottom: 0;
-                    }
-                }
-            }
-        }
-        .second-container-about{     /*----Segunda imagen con 2 parrafos----*/
-            padding-top:60px;
-            .second-img{
-                position: relative;
-                width: 100%;
-                padding-right: 5px;
-                padding-left: 5px;
-                img{
-                    max-width: 100%;
-                    height: auto;
-                }
-            }
-            .second-container-text{
-                padding-top: 2rem;
-                position: relative;
-                width: 100%;
-                h4{
-                    font-size: 24px;
-                    font-weight: 600;
-                    margin: 0 0 20px 0;
-                    color:$gris-oscuro;
-                }
-                p{
-                    font-size: 16px;
-                    color:$gris-oscuro;
-                    margin: 0 0 30px 0;
-
-                }
-            }
-        }
-        .third-container-about{    /*----Tercer imagen con parrafo----*/
-            padding-top: 60px;
-            .third-img{
-                position: relative;
-                width: 100%;
-                img{
-                    max-width: 100%;
-                    height: auto;
-                }
-            }
-            .third-container-text{
-                padding-top: 2rem;
-                position: relative;
-                width: 100%;
-                h4{
-                    font-size: 24px;
-                    font-weight: 600;
-                    margin: 0 0 20px 0;
-                    color: $gris-oscuro;
-                }
-                p{
-                    font-size: 16px;
-                    color:$gris-oscuro;
-                    margin: 0 0 30px 0;
-                }
-
-            }
-        }
-    }
+#about-us {
+ padding: 60px 0;
+ padding-top: 60px;
+ padding-bottom: 60px;
+ @include laptop-a {
+   margin-right: 80px;
+   margin-left: 80px;
+ }
+ .texto {
+   font-family: $font-family;
+   font-size: 14px;
+   line-height: 20px;
+   text-align: center;
+   padding: 0px 0px 50px;
+   color: $gris-oscuro;
+   @include laptop-a {
+     
+     width: 50%;
+     text-align: center;
+     margin:auto;
+   }
+ }
+ .general {
+   @include laptop-a {
+     margin-right: auto;
+     margin-left: auto;
+     width: 100%;
+   }
+   .todoprimero {
+     display: flex;
+     flex-direction: column;
+     @include laptop-a {
+       display: flex;
+       flex-direction: row-reverse;
+     }
+     .gente {
+       img {
+         width: 100%;
+         height: auto;
+         vertical-align: middle;
+         box-sizing: border-box;
+         @include laptop-a {
+           width: 100%;
+         }
+       }
+     }
+     .wrapgente {
+       @include laptop-a {
+         width: 100%;
+         padding: 0 15px;
+       }
+       article {
+         .primero {
+           text-align: left;
+           font-family: $font-family;
+           font-size: 14px;
+           line-height: 24px;
+           color: $gris-oscuro;
+           margin-bottom: 30px;
+         }
+       }
+     }
+   }
+ }
+ .Eiusmod {
+   padding: 0px 0px 30px 0px;
+   background-size: cover;
+   &:hover .icono {
+     background-color: $botones;
+     .fa {
+       color:$blanco;
+     }
+   }
+ }
+ .icono {
+   border-radius: 50%;
+   height: 55px;
+   width: 55px;
+   display: flex;
+   float: left;
+   border: 2px solid #007bff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   .fa {
+     font-size: 25px;
+     color: #007bff;
+     display: inline-block;
+   }
+ }
 }
+.ei {
+ font-family: $font-h;
+ font-weight: 600;
+ font-size: 20px;
+ margin: 0px 0 5px 80px;
+}
+.segundo {
+ text-align: left;
+ font-weight: 400;
+ font-family: $font-h;
+ font-size: 14px;
+ line-height: 24px;
+ color:$gris-oscuro;
+ margin: 0px 0px 0px 80px;
+}
+.general2 {
+ display: flex;
+ flex-direction: column;
+ @include laptop-a {
+   display: flex;
+   flex-direction: row;
+   padding-top: 60px;
+ }
+ .chica {
+   img {
+     width: 100%;
+     height: auto;
+     vertical-align: middle;
+     box-sizing: border-box;
+     @include laptop-a {
+       width: 100%;
+       padding: 0 15px;
+     }
+   }
+ }
+ .todosegundo {
+   @include laptop-a {
+     padding: 0 15px;
+     max-width: 46%;
+   }
+   }
+   .Sub {
+     font-family: $font-family;
+     font-weight: 600;
+     color: $gris-oscuro;
+   }
+   .dos {
+     font-family: $font-family;
+     font-size: 16px;
+     color: $gris-oscuro;
+     margin-bottom: 30px;
+   }
+ }
+ .reverse {
+   @include laptop-a {
+     flex-direction: row-reverse;
+     justify-content: flex-start;
+     padding-top: 60px;
+   }
+ }

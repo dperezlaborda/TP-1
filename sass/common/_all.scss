@@ -1,0 +1,50 @@
+    *{
+    box-sizing: border-box;
+}
+h2, h3, h4, h5{
+    font-family: $font-titulo;
+}
+a, span {
+    font-family: $font-titulo;
+}
+body{
+    color:black;
+    margin: 0;
+}
+
+p{
+    font-family: $font-parrafo;
+}
+
+//El header de todas las sections a partir de ABOUT
+
+.header-all{
+    text-align: center;
+    position: relative;
+    color:$color-header;
+    h3{
+        font-size: 36px;
+        font-weight: 500;
+        margin:0 0 20px 0;
+        padding: 0;
+    }
+    p{
+        font-size: 15px;
+        color:$gris;
+        padding-bottom: 60px;
+        margin:0;
+    }
+}
+
+// CONTAINER DE TODAS LAS SECTIONS A PARTIR DE ABOUT
+
+.container{
+    h2, h3, h4, h5{
+        font-family: $font-titulo;
+    }
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
