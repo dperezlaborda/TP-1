@@ -1,4 +1,9 @@
-    *{
+/*
+* La idea del all.scss es que tenga una llamada a cada archivo dentro de esa carpeta,
+* no que tenga mas estilos. Es una forma mas sencilla de llamar a todos los archivos
+* dentro de la carpeta common
+*/
+*{
     box-sizing: border-box;
 }
 h2, h3, h4, h5{

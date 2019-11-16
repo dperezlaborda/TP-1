@@ -1,3 +1,5 @@
+/*Si ya importe esto en el main.scss, no es necesario reimportarlo. Solo tiene que estar antes
+de la llamada a este archivo, como esta hecho. */
 @import "../common/mixins";
 @import "../common/all";
 @import "../common/variables";
@@ -81,6 +83,7 @@
    height: 55px;
    width: 55px;
    display: flex;
+   // Muy bien usado este float
    float: left;
    border: 2px solid #007bff;
    display: flex;
