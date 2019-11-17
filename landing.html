@@ -7,6 +7,7 @@
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <!-- Por que estan cargando bootstrap y jquery?? -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -15,6 +16,8 @@
     </head>
     <body>
         <!--=================HEADER=========================-->
+        <!-- Esta muy bien, pero quedaron algunos estilos de desktop pendientes. Resuelvanlos para tener la practica hecha.
+              Esto incluye el menu y los submenues, la seccion de los diamantes y el contacto. -->
         <header id="header">
             <div class="header-container">
                 <div class="logo-ada">
@@ -28,6 +31,7 @@
                         </div>
                     </label>
                 </div>          
+                    <!-- Esto deberia ser un nav -->
                     <div class="menu-hide"> <!--si no funciona cambiar x DIV-->
                         <ul>
                             <li>
@@ -107,7 +111,7 @@
             </div>
             
             <!-- MENU SUPERIOR--> 
-
+            <!--Esto deberia ser un nav -->
             <div id="menu-superior" class="menu-superior"> <!--si no funciona cambiar x DIV-->
                 <ul>
                     <li>
@@ -186,6 +190,9 @@
         <!--=================INTRO=========================-->
 
         <section id="intro">
+          <!-- Este container no es realmente necesario, para eso ya tenemos el section.
+                Al no afectar realmente a la semantica, no pasa nada con dejarlo, pero para 
+              tener en cuenta la proxima. Pasa lo mismo en otros sections-->
             <div class="container">
                 <div class="texto-imagen">
                         <img src="img/intro-img.svg" class="intro-img">
@@ -206,6 +213,7 @@
             <div class="container">
               <header class="cabecera header-all">
                 <h2 class="titulo">About Us</h2>
+                <!-- Esto es un subtitulo h3 en este caso. Sucede lo mismo en otros headers-->
                 <p class="texto">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -637,6 +645,7 @@
             <div class="team1">
               <div class="overlay">
                 <h2>Ben Affleck</h2>
+                <!-- Estos son subtitulos -->
                 <span>Chief Executive Officer</span>
                 <div class="iconoschiquitos">
                   <i class="fa fa-twitter iconaso" aria-hidden="true"></i>
@@ -692,7 +701,7 @@
       </section>
 
      <!--=================CLIENTS=========================--> 
-
+      <!-- las imagenes quedaron un poco grandes en mobile y falto la interaccion del hover -->
     <section id="clients" class="clients-bg">
         <div class="container">
             <header class="clients-header">
@@ -746,6 +755,7 @@
                 <div class="info">
                     <div class="caja">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <!-- Esto podria ser <address>-->
                         <p>Scranton, PA 18503, EE UU</p>
                     </div>
                     <div class="caja">
@@ -803,6 +813,7 @@
                             <li><a href="#">Privacy policy</a></li>     
                         </ul>
                     </div>  
+                    <!--<Address>-->
                     <div class="contact-footer margin">
                         <h4>CONTACT US</h4>
                         <p>A108 Scranton <br>
